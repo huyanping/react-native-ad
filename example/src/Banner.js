@@ -1,34 +1,22 @@
 import React, {useEffect} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Dimensions} from 'react-native';
 import {ad} from 'react-native-ad';
 
-export default function Feed() {
+export default function Banner() {
   useEffect(() => {
     ad.init({
       appid: '5188701',
     });
 
-    //提前加载feed ad 结果测试
-    ad.loadFeedAd({
-      appid: '5188701',
-      codeid: '947641487',
-    }).then(
-      (result) => {
-        console.log('load feed ad result ', result);
-      },
-      (reason) => {
-        console.log('加载 feed ad 失败理由 ', reason);
-      },
-    );
-
     return () => {};
   }, []);
   return (
     <View style={styles.container}>
-      <Text>测试FeedAd</Text>
-      <ad.Feed
-        codeid="947641487" //必传 广告位 codeid 注意区分 Android 和 IOS
-        adWidth={400}
+      <Text>测试Banner</Text>
+      <ad.Banner
+        codeid="946309523" //必传 广告位 codeid 注意区分 Android 和 IOS
+        adSize="600x90"
+        adWidth={150}
         onAdLayout={(data) => {
           console.log('Feed 广告加载成功！', data);
         }}
@@ -48,15 +36,15 @@ export default function Feed() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // flex: 1,
+    // justifyContent: 'center',
+    // alignItems: 'center',
     backgroundColor: '#cccccc',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    // margin: 10,
   },
   instructions: {
     textAlign: 'center',

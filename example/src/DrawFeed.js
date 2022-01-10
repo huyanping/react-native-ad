@@ -5,7 +5,7 @@ import {ad} from 'react-native-ad';
 export default function DrawFeed() {
   useEffect(() => {
     ad.init({
-      appid: '5016582',
+      appid: '5188701',
       app: '演示APP',
     });
 
@@ -22,7 +22,7 @@ export default function DrawFeed() {
   return (
     <View style={styles.container}>
       <ad.DrawFeed
-        codeid="945339778" // 广告位 codeid （必传），注意区分 Android 和 IOS
+        codeid="947641487" // 广告位 codeid （必传），注意区分 Android 和 IOS
         onAdShow={(msg) => {
           // 广告加载成功回调
           console.log('Draw Feed 广告加载成功！', msg);

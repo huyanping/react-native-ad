@@ -12,6 +12,7 @@ import startRewardVideo from './RewardVideo';
 import DrawFeed from './toutiao/DrawFeed';
 import Feed from './toutiao/Feed';
 import Stream from './toutiao/Stream';
+import Banner from './toutiao/Banner';
 
 import TxFeed from './tencent/TxFeed';
 
@@ -31,4 +32,5 @@ export default {
     TxFeed,
     KsDrawFeed,
     KsFeed,
+    Banner,
 };

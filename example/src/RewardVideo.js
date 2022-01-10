@@ -5,8 +5,8 @@ import {ad} from 'react-native-ad';
 export default function RewardVideo() {
   useEffect(() => {
     ad.init({
-      appid: '5016582',
-      codeid_reward_video: '945294086',
+      appid: '5188701',
+      codeid_reward_video: '946309524',
     });
     return () => {};
   }, []);
@@ -25,8 +25,8 @@ export default function RewardVideo() {
         }}
         onPress={() => {
           const rewardVideo = ad.startRewardVideo({
-            appid: '5016582',
-            codeid: '945294086',
+            appid: '5188701',
+            codeid: '946309524',
           });
 
           rewardVideo.result.then((val) => {

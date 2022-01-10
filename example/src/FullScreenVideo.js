@@ -5,8 +5,8 @@ import {ad} from 'react-native-ad';
 export default function FullVideo() {
   useEffect(() => {
     ad.init({
-      appid: '5016582',
-      codeid_full_video: '945294087',
+      appid: '5188701',
+      codeid_full_video: '946309526',
     });
     return () => {};
   }, []);
@@ -25,8 +25,8 @@ export default function FullVideo() {
         }}
         onPress={() => {
           let fullVideo = ad.startFullVideo({
-            appid: '5016582',
-            codeid: '945294087',
+            appid: '5188701',
+            codeid: '946309526',
           });
           console.log('FullVideoAd rs:', fullVideo);
           fullVideo.result?.then((val) => {

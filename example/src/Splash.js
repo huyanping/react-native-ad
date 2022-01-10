@@ -25,8 +25,8 @@ export default function SplashAd() {
         }}
         onPress={() => {
           const splashAd = ad.startSplash({
-            appid: '5016582',
-            codeid: '816582039',
+            appid: '5188701',
+            codeid: '887503204',
             anim: 'default',
           });
 
